@@ -1,12 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-</head>
-<body>
-    <h1>Home page Content</h1>
-</body>
-</html>
+<%- include('./layout/head') %> 
+<%- include('./layout/navbar') %> 
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-5">
+
+            <div class="card shadow">
+                <div class="card-header">
+                    <h3>Home
+                        <a href="/add" class="btn btn-primary btn-sm float-end">Add User</a>
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">101</th>
+                            <td>Image</td>
+                            <td>Mark</td>
+                            <td>mark@gmail.com</td>
+                            <td>039520230</td>
+                            <td>
+                                <a href="#" class="text-success">Edit</a>
+                                <a href="#" class="text-danger">Delete</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./layout/footer') %> 
